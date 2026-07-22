@@ -159,3 +159,31 @@ footer{
     color:white;
     font-size:22px;
 }
+.badge{
+    background:#ff9800;
+    color:white;
+    display:inline-block;
+    padding:8px 20px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+
+.rating{
+    font-size:25px;
+    margin:15px;
+}
+
+
+.card button{
+    transition:.3s;
+}
+
+
+.card button:hover{
+    background:#ff9800;
+    transform:scale(1.08);
+}
+
