@@ -2,28 +2,28 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Segoe UI",sans-serif;
+    font-family:"Segoe UI", sans-serif;
 }
 
 
 body{
-    background:#f6f7fb;
+    background:#f5f6fa;
     color:#222;
 }
 
 
 /* HEADER */
 
-header{
+.hero{
 
-    background:linear-gradient(135deg,#ff5a00,#ff9f00);
+    background:linear-gradient(135deg,#ff6a00,#ffb000);
     color:white;
-    padding-bottom:40px;
+    padding-bottom:60px;
 
 }
 
 
-.top{
+.navbar{
 
     display:flex;
     justify-content:space-between;
@@ -33,7 +33,7 @@ header{
 }
 
 
-.top h1{
+.navbar h1{
 
     font-size:55px;
     font-weight:900;
@@ -41,10 +41,10 @@ header{
 }
 
 
-.top button{
+.navbar button{
 
     background:white;
-    color:#ff5a00;
+    color:#ff6a00;
     border:none;
     padding:15px 35px;
     border-radius:30px;
@@ -54,10 +54,7 @@ header{
 
 
 
-/* BANNER */
-
-
-.banner{
+.welcome{
 
     text-align:center;
     padding:50px 20px;
@@ -65,14 +62,14 @@ header{
 }
 
 
-.banner h2{
+.welcome h2{
 
-    font-size:55px;
+    font-size:60px;
 
 }
 
 
-.banner p{
+.welcome p{
 
     font-size:25px;
     margin:20px;
@@ -80,6 +77,8 @@ header{
 }
 
 
+
+/* SEARCH */
 
 .search{
 
@@ -93,7 +92,8 @@ header{
 .search input{
 
     width:60%;
-    padding:22px;
+    max-width:700px;
+    padding:25px;
     border:none;
     border-radius:40px 0 0 40px;
     font-size:22px;
@@ -101,68 +101,72 @@ header{
 }
 
 
+
 .search button{
 
-    width:80px;
+    width:90px;
     border:none;
     background:#222;
     color:white;
+    font-size:25px;
     border-radius:0 40px 40px 0;
-    font-size:25px;
 
 }
 
 
 
-.sell{
+.add{
 
+    padding:20px 50px;
+    border:none;
+    border-radius:40px;
     background:#222;
     color:white;
-    border:none;
-    padding:20px 50px;
-    border-radius:40px;
     font-size:25px;
+    cursor:pointer;
 
 }
 
 
 
+/* KATEQORIYALAR */
 
-/* KATEQORIYA */
 
+.categories,
+.products{
 
-.categories{
-
-    padding:50px 7%;
+    padding:60px 7%;
 
 }
 
 
-h2{
+.categories h2,
+.products h2{
 
     text-align:center;
-    font-size:40px;
+    font-size:45px;
     margin-bottom:40px;
 
 }
 
 
 
-.cats{
+.category-list{
 
     display:flex;
-    gap:25px;
     justify-content:center;
     flex-wrap:wrap;
+    gap:25px;
 
 }
 
 
-.cats div{
+
+.category-list div{
 
     background:white;
-    padding:30px;
-    border-radius:25px;
+    padding:30px 45px;
+    border-radius:30px;
     font-size:25px;
     box-shadow:0 10px 25px #0002;
 
@@ -170,17 +174,10 @@ h2{
 
 
 
-/* PRODUCTS */
+/* MEHSULLAR */
 
 
-.products{
-
-    padding:50px 7%;
-
-}
-
-
-.cards{
+.products-list{
 
     display:flex;
     justify-content:center;
@@ -191,19 +188,20 @@ h2{
 
 
 
-.card{
+.product-card{
 
     background:white;
     width:330px;
     padding:25px;
-    border-radius:30px;
+    border-radius:35px;
     box-shadow:0 15px 35px #0002;
     transition:.3s;
 
 }
 
 
-.card:hover{
+
+.product-card:hover{
 
     transform:translateY(-10px);
 
@@ -211,7 +209,7 @@ h2{
 
 
 
-.card img{
+.product-card img{
 
     width:100%;
     border-radius:25px;
@@ -220,16 +218,16 @@ h2{
 
 
 
-.card h3{
+.product-card h3{
 
-    font-size:30px;
+    font-size:32px;
     margin:20px 0;
 
 }
 
 
 
-.card p{
+.product-card p{
 
     font-size:20px;
 
@@ -237,119 +235,45 @@ h2{
 
 
 
-.card strong{
+.product-card strong{
 
     display:block;
-    color:#ff5a00;
-    font-size:30px;
+    color:#ff6a00;
+    font-size:32px;
     margin:20px 0;
 
 }
 
 
 
-.card button{
+.product-card button{
 
     width:100%;
     padding:18px;
-    background:#ff5a00;
-    color:white;
     border:none;
     border-radius:30px;
+    background:#ff6a00;
+    color:white;
     font-size:22px;
 
 }
 
 
 
-/* TELEFON */
+/* MOBIL */
 
 @media(max-width:700px){
 
-.top h1{
+.navbar h1{
     font-size:40px;
 }
 
-
-.banner h2{
-    font-size:35px;
+.welcome h2{
+    font-size:38px;
 }
-
 
 .search input{
     width:75%;
 }
-
-
-}
-.form-area{
-
-    padding:60px 20px;
-    background:#f6f7fb;
-
-}
-
-
-.form{
-
-    max-width:650px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:35px;
-    box-shadow:0 15px 35px #0002;
-
-}
-
-
-
-.form input,
-.form select,
-.form textarea{
-
-    width:100%;
-    padding:20px;
-    margin:15px 0;
-    border:1px solid #ddd;
-    border-radius:25px;
-    font-size:20px;
-    outline:none;
-
-}
-
-
-
-.form textarea{
-
-    height:160px;
-    resize:none;
-
-}
-
-
-
-.form input[type="file"]{
-
-    background:#fff4eb;
-    padding:15px;
-
-}
-
-
-
-.form .sell{
-
-    width:100%;
-    background:#ff5a00;
-    color:white;
-    cursor:pointer;
-
-}
-
-
-
-.form .sell:hover{
-
-    background:#222;
 
 }
