@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Məhsul yerləşdir - AlSat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="hero">
+
+<div class="logo">
+➕ AlSat
+</div>
+
+<p>
+Yeni məhsul yerləşdir
+</p>
+
+</header>
+
+
+
+<section class="form-box">
+
+
+<h2>
+Məhsul məlumatları
+</h2>
+
+
+
+<input type="text" placeholder="Məhsul adı">
+
+
+<select>
+
+<option>
+Kateqoriya seç
+</option>
+
+<option>
+Telefon
+</option>
+
+<option>
+Beauty
+</option>
+
+<option>
+Kompüter
+</option>
+
+<option>
+Geyim
+</option>
+
+<option>
+Ev
+</option>
+
+</select>
+
+
+
+<input type="number" placeholder="Qiymət AZN">
+
+
+
+<input type="text" placeholder="Şəhər">
+
+
+
+<textarea placeholder="Məhsul haqqında məlumat"></textarea>
+
+
+
+<input type="text" placeholder="Əlaqə nömrəsi">
+
+
+
+<button>
+Elanı yerləşdir
+</button>
+
+
+</section>
+
+
+
+</body>
+
+</html>
