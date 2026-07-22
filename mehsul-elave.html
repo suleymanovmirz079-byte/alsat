@@ -406,6 +406,27 @@ input {
 
 <button>Yadda saxla</button>
     <p>Kateqoriya:</p>
+        <script>
+function mehsulElaveEt(){
+
+let ad = document.getElementById("productName").value;
+let kateqoriya = document.getElementById("category").value;
+
+let mehsul = {
+    ad: ad,
+    kateqoriya: kateqoriya
+};
+
+let mehsullar = JSON.parse(localStorage.getItem("mehsullar")) || [];
+
+mehsullar.push(mehsul);
+
+localStorage.setItem("mehsullar", JSON.stringify(mehsullar));
+
+alert("Məhsul əlavə edildi!");
+}
+</script>
+
 
 <select>
 <option>Beauty</option>
