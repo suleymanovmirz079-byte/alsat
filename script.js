@@ -1,43 +1,45 @@
 const searchInput = document.querySelector(".search-box input");
+
+function showProducts(){
+
 const cards = document.querySelectorAll(".card");
+let text = searchInput.value.toLowerCase();
 
-searchInput.addEventListener("keyup", function(){
+cards.forEach(function(card){
 
-    let text = searchInput.value.toLowerCase();
+let product = card.innerText.toLowerCase();
 
-    cards.forEach(function(card){
-
-        let product = card.innerText.toLowerCase();
-
-        if(product.includes(text)){
-            card.style.display = "block";
-        }
-        else{
-            card.style.display = "none";
-        }
-
-    });
+if(product.includes(text)){
+    card.style.display = "block";
+}
+else{
+    card.style.display = "none";
+}
 
 });
 
-const searchInput = document.querySelector(".search-box input");
+}
+
+
+searchInput.addEventListener("keyup", showProducts);
+
+
+function filterProducts(category){
+
 const cards = document.querySelectorAll(".card");
 
-searchInput.addEventListener("keyup", function(){
+cards.forEach(function(card){
 
-    let text = searchInput.value.toLowerCase();
+let item = card.getAttribute("data-category");
 
-    cards.forEach(function(card){
-
-        let product = card.innerText.toLowerCase();
-
-        if(product.includes(text)){
-            card.style.display = "block";
-        }
-        else{
-            card.style.display = "none";
-        }
-
-    });
+if(category === "all" || item === category){
+    card.style.display = "block";
+}
+else{
+    card.style.display = "none";
+}
 
 });
+
+}
+
