@@ -277,3 +277,86 @@ body{
 }
 
 }
+.form-section{
+
+    padding:60px 20px;
+    background:#f5f6fa;
+
+}
+
+
+
+.form-section h2{
+
+    text-align:center;
+    font-size:45px;
+    color:#ff6a00;
+    margin-bottom:40px;
+
+}
+
+
+
+.form-box{
+
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:45px;
+    border-radius:40px;
+    box-shadow:0 15px 35px #0002;
+
+}
+
+
+
+.form-box input,
+.form-box select,
+.form-box textarea{
+
+    width:100%;
+    padding:22px;
+    margin:15px 0;
+    border:1px solid #ddd;
+    border-radius:25px;
+    font-size:20px;
+    outline:none;
+
+}
+
+
+
+.form-box textarea{
+
+    height:160px;
+    resize:none;
+
+}
+
+
+
+.form-box input[type="file"]{
+
+    background:#fff3e8;
+    padding:18px;
+
+}
+
+
+
+.form-box .add{
+
+    width:100%;
+    background:#ff6a00;
+    color:white;
+    margin-top:20px;
+
+}
+
+
+
+.form-box .add:hover{
+
+    background:#222;
+
+}
