@@ -2,10 +2,11 @@
 <html lang="az">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AlSat - Online Market</title>
+<title>AlSat - Elan Platforması</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,33 +16,35 @@
 <body>
 
 
-<header>
+<header class="hero">
 
-<div class="top">
+<div class="navbar">
 
 <h1>🛒 AlSat</h1>
 
 <button>
-Giriş
+Daxil ol
 </button>
 
 </div>
 
 
-<div class="banner">
+
+<div class="welcome">
 
 <h2>
-İstədiyini tap, sat və al
+Al, sat və kəşf et
 </h2>
 
 <p>
-Sürətli və rahat alış-veriş platforması
+İstədiyin məhsulu tez və rahat tap
 </p>
+
 
 
 <div class="search">
 
-<input placeholder="Məhsul axtar...">
+<input type="text" placeholder="Məhsul axtar...">
 
 <button>
 🔍
@@ -50,12 +53,20 @@ Sürətli və rahat alış-veriş platforması
 </div>
 
 
-<button class="sell">
-➕ Məhsul yerləşdir
+
+<a href="elan.html">
+
+<button class="add">
+
+➕ Elan yerləşdir
+
 </button>
+
+</a>
 
 
 </div>
+
 
 </header>
 
@@ -64,24 +75,50 @@ Sürətli və rahat alış-veriş platforması
 
 <section class="categories">
 
+
 <h2>
 Kateqoriyalar
 </h2>
 
 
-<div class="cats">
+<div class="category-list">
 
-<div>📱 Telefon</div>
-<div>💻 Texnika</div>
-<div>💄 Beauty</div>
-<div>👕 Geyim</div>
-<div>🏠 Ev</div>
-<div>🚗 Avto</div>
+
+<div>
+📱 Telefon
+</div>
+
+
+<div>
+💻 Texnika
+</div>
+
+
+<div>
+💄 Beauty
+</div>
+
+
+<div>
+👕 Geyim
+</div>
+
+
+<div>
+🏠 Ev
+</div>
+
+
+<div>
+🚗 Avtomobil
+</div>
 
 
 </div>
 
+
 </section>
+
 
 
 
@@ -90,71 +127,53 @@ Kateqoriyalar
 
 
 <h2>
-🔥 Populyar məhsullar
+🔥 Yeni elanlar
 </h2>
 
 
 
-<div class="cards" id="productList">
-</div>
+<div class="products-list">
 
 
 
-<div class="card">
+<div class="product-card">
+
 
 <img src="https://via.placeholder.com/300">
+
 
 <h3>
 iPhone 15 Pro
 </h3>
 
+
 <p>
 📍 Bakı
 </p>
+
 
 <strong>
 2500 AZN
 </strong>
 
-<button>
-Əlaqə
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="https://via.placeholder.com/300">
-
-<h3>
-Laptop
-</h3>
-
-<p>
-📍 Bakı
-</p>
-
-<strong>
-900 AZN
-</strong>
 
 <button>
-Əlaqə
+📞 Əlaqə
 </button>
 
-</div>
-
-
 
 </div>
+
+
+
+
+</div>
+
 
 
 </section>
 
 
-<script src="script.js"></script>
 
 </body>
 
