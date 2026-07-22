@@ -16,6 +16,26 @@
     border-radius: 30px;
     border: 8px solid #0057b8;
 }
+<header class="header">
+    <div class="logo">🛒 AlSat</div>
+    <p class="subtitle">Azərbaycanın Alış-Satış Platforması</p>
+
+    <div class="search">
+        <input type="text" placeholder="🔍 Məhsul axtar...">
+        <button>Axtar</button>
+    </div>
+
+    <div class="menu">
+        <a href="#">🏠 Ana səhifə</a>
+        <a href="#">📦 Məhsullar</a>
+        <a href="#">💄 Beauty</a>
+        <a href="#">📱 Telefon</a>
+        <a href="#">💻 Kompüter</a>
+        <a href="#">👕 Geyim</a>
+        <a href="#">🏠 Ev</a>
+        <a href="#">📞 Əlaqə</a>
+    </div>
+</header>
 
 body {
     font-family: Arial, sans-serif;
@@ -43,6 +63,83 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background: #f2f6ff;
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI,sans-serif;
+background:#eef5ff;
+text-align:center;
+}
+
+.header{
+background:linear-gradient(90deg,#0057b8,#008cff);
+padding:40px;
+color:white;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:70px;
+font-weight:bold;
+}
+
+.subtitle{
+font-size:28px;
+margin-top:10px;
+}
+
+.search{
+margin-top:30px;
+}
+
+.search input{
+width:60%;
+max-width:700px;
+padding:18px;
+font-size:26px;
+border-radius:40px;
+border:none;
+text-align:center;
+}
+
+.search button{
+padding:18px 35px;
+font-size:24px;
+border:none;
+border-radius:40px;
+background:#ff9800;
+color:white;
+margin-left:10px;
+cursor:pointer;
+}
+
+.menu{
+margin-top:30px;
+}
+
+.menu a{
+text-decoration:none;
+background:white;
+color:#0057b8;
+padding:15px 25px;
+border-radius:30px;
+margin:8px;
+display:inline-block;
+font-size:24px;
+font-weight:bold;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#ff9800;
+color:white;
+transform:scale(1.08);
+}
+
 }
 
 h1 {
