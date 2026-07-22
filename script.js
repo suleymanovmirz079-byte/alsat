@@ -7,20 +7,12 @@ function addProduct(){
     let phone = document.getElementById("productPhone").value;
 
 
-    if(name === "" || price === "" || phone === ""){
-        alert("Məhsul adı, qiymət və telefon vacibdir!");
-        return;
-    }
-
-
     let product = {
-
         name:name,
         price:price,
         city:city,
         info:info,
         phone:phone
-
     };
 
 
@@ -33,37 +25,50 @@ function addProduct(){
     localStorage.setItem("products", JSON.stringify(products));
 
 
-    alert("Elan uğurla əlavə edildi!");
-
+    alert("Məhsul əlavə olundu");
 
     window.location.href="index.html";
 
 }
+
+
+
+
+if(document.getElementById("productList")){
+
+
 let list = document.getElementById("productList");
+
 
 let products = JSON.parse(localStorage.getItem("products")) || [];
 
 
 products.forEach(function(product){
 
-    list.innerHTML += `
 
-    <div class="card">
+list.innerHTML += `
 
-        <h3>${product.name}</h3>
+<div class="card">
 
-        <p>📍 ${product.city}</p>
+<h3>${product.name}</h3>
 
-        <strong>${product.price} AZN</strong>
+<p>📍 ${product.city}</p>
 
-        <p>${product.info}</p>
+<strong>${product.price} AZN</strong>
 
-        <button>
-        📞 ${product.phone}
-        </button>
+<p>${product.info}</p>
 
-    </div>
+<button>
+📞 ${product.phone}
+</button>
 
-    `;
+
+</div>
+
+`;
+
 
 });
+
+
+}
