@@ -48,7 +48,8 @@ Yeni məhsul yerləşdir
 <input type="file" accept="image/*">
 
 
-<input type="text" placeholder="Məhsul adı">
+<input id="productName" type="text" placeholder="Məhsul adı">
+
 
 
 <select>
@@ -80,25 +81,28 @@ Ev
 </select>
 
 
-<input type="number" placeholder="Qiymət (AZN)">
+<input id="productPrice" type="number" placeholder="Qiymət (AZN)">
 
 
 
-<input type="text" placeholder="Şəhər">
+<input id="productCity" type="text" placeholder="Şəhər">
 
 
 
-<textarea placeholder="Məhsul haqqında məlumat"></textarea>
+
+<textarea id="productInfo" placeholder="Məhsul haqqında məlumat"></textarea>
 
 
 
-<input type="text" placeholder="Əlaqə nömrəsi">
+
+<input id="productPhone" type="text" placeholder="Əlaqə nömrəsi">
 
 
 
-<button class="sell">
+<button class="sell" onclick="addProduct()">
 Elanı yerləşdir
 </button>
+
 
 
 
