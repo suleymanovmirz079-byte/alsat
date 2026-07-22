@@ -39,3 +39,31 @@ function addProduct(){
     window.location.href="index.html";
 
 }
+let list = document.getElementById("productList");
+
+let products = JSON.parse(localStorage.getItem("products")) || [];
+
+
+products.forEach(function(product){
+
+    list.innerHTML += `
+
+    <div class="card">
+
+        <h3>${product.name}</h3>
+
+        <p>📍 ${product.city}</p>
+
+        <strong>${product.price} AZN</strong>
+
+        <p>${product.info}</p>
+
+        <button>
+        📞 ${product.phone}
+        </button>
+
+    </div>
+
+    `;
+
+});
