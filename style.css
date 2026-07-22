@@ -282,3 +282,74 @@ h2{
 
 
 }
+.form-area{
+
+    padding:60px 20px;
+    background:#f6f7fb;
+
+}
+
+
+.form{
+
+    max-width:650px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:35px;
+    box-shadow:0 15px 35px #0002;
+
+}
+
+
+
+.form input,
+.form select,
+.form textarea{
+
+    width:100%;
+    padding:20px;
+    margin:15px 0;
+    border:1px solid #ddd;
+    border-radius:25px;
+    font-size:20px;
+    outline:none;
+
+}
+
+
+
+.form textarea{
+
+    height:160px;
+    resize:none;
+
+}
+
+
+
+.form input[type="file"]{
+
+    background:#fff4eb;
+    padding:15px;
+
+}
+
+
+
+.form .sell{
+
+    width:100%;
+    background:#ff5a00;
+    color:white;
+    cursor:pointer;
+
+}
+
+
+
+.form .sell:hover{
+
+    background:#222;
+
+}
