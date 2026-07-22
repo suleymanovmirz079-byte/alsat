@@ -72,3 +72,37 @@ list.innerHTML += `
 
 
 }
+function elanYarat(){
+
+    let ad = document.getElementById("ad").value;
+    let qiymet = document.getElementById("qiymet").value;
+    let seher = document.getElementById("seher").value;
+    let satici = document.getElementById("satici").value;
+    let telefon = document.getElementById("telefon").value;
+    let melumat = document.getElementById("melumat").value;
+
+
+    let yeniElan = {
+        ad: ad,
+        qiymet: qiymet,
+        seher: seher,
+        satici: satici,
+        telefon: telefon,
+        melumat: melumat
+    };
+
+
+    let elanlar = JSON.parse(localStorage.getItem("elanlar")) || [];
+
+
+    elanlar.push(yeniElan);
+
+
+    localStorage.setItem("elanlar", JSON.stringify(elanlar));
+
+
+    alert("Elan əlavə edildi!");
+
+    window.location.href="index.html";
+
+}
