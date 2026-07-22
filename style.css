@@ -2,39 +2,79 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
 }
+
 
 body{
-    font-family:"Segoe UI", Arial, sans-serif;
-    background:#f5f8ff;
+    background:#f6f7fb;
     color:#222;
-    text-align:center;
 }
 
 
-/* Üst hissə */
+/* HEADER */
 
-.hero{
+header{
 
-    background:linear-gradient(135deg,#0047ab,#00b4ff);
+    background:linear-gradient(135deg,#ff5a00,#ff9f00);
     color:white;
-    padding:70px 20px;
-    border-radius:0 0 60px 60px;
+    padding-bottom:40px;
 
 }
 
 
-.logo{
+.top{
 
-    font-size:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 7%;
+
+}
+
+
+.top h1{
+
+    font-size:55px;
     font-weight:900;
 
 }
 
 
-.hero p{
+.top button{
 
-    font-size:30px;
+    background:white;
+    color:#ff5a00;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:20px;
+
+}
+
+
+
+/* BANNER */
+
+
+.banner{
+
+    text-align:center;
+    padding:50px 20px;
+
+}
+
+
+.banner h2{
+
+    font-size:55px;
+
+}
+
+
+.banner p{
+
+    font-size:25px;
     margin:20px;
 
 }
@@ -43,231 +83,202 @@ body{
 
 .search{
 
-    margin:40px auto;
+    display:flex;
+    justify-content:center;
+    margin:35px;
 
 }
 
 
 .search input{
 
-    width:65%;
-    max-width:700px;
-    padding:25px;
+    width:60%;
+    padding:22px;
     border:none;
     border-radius:40px 0 0 40px;
-    font-size:25px;
-    text-align:center;
+    font-size:22px;
 
 }
 
 
 .search button{
 
-    padding:25px 35px;
+    width:80px;
     border:none;
-    border-radius:0 40px 40px 0;
-    background:#ff9800;
+    background:#222;
     color:white;
+    border-radius:0 40px 40px 0;
     font-size:25px;
 
 }
 
 
 
-.add-btn{
+.sell{
 
-    background:white;
-    color:#0047ab;
+    background:#222;
+    color:white;
     border:none;
-    padding:20px 40px;
+    padding:20px 50px;
     border-radius:40px;
     font-size:25px;
-    cursor:pointer;
 
 }
 
 
+
+
+/* KATEQORIYA */
+
+
+.categories{
+
+    padding:50px 7%;
+
+}
 
 
 h2{
 
-    font-size:45px;
-    margin:50px;
-    color:#0047ab;
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
 
 }
 
 
 
-
-.category-list{
+.cats{
 
     display:flex;
+    gap:25px;
     justify-content:center;
     flex-wrap:wrap;
-    gap:25px;
 
 }
 
 
-
-.category-list div{
+.cats div{
 
     background:white;
-    padding:30px 45px;
-    border-radius:30px;
-    font-size:28px;
+    padding:30px;
+    border-radius:25px;
+    font-size:25px;
     box-shadow:0 10px 25px #0002;
-    cursor:pointer;
 
 }
 
 
+
+/* PRODUCTS */
 
 
 .products{
 
+    padding:50px 7%;
+
+}
+
+
+.cards{
+
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:40px;
-    padding:40px;
+    gap:35px;
 
 }
 
 
 
-
-.product-card{
+.card{
 
     background:white;
-    width:350px;
-    padding:35px;
-    border-radius:40px;
-    box-shadow:0 15px 35px #0002;
-
-}
-
-
-
-.product-image{
-
-    height:220px;
-    background:#eef5ff;
+    width:330px;
+    padding:25px;
     border-radius:30px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:120px;
+    box-shadow:0 15px 35px #0002;
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
 
 }
 
 
 
-.product-card h3{
+.card img{
 
-    font-size:35px;
-    color:#0047ab;
-    margin:25px;
-
-}
-
-
-
-.product-card p{
-
-    font-size:25px;
+    width:100%;
+    border-radius:25px;
 
 }
 
 
 
-.product-card strong{
+.card h3{
+
+    font-size:30px;
+    margin:20px 0;
+
+}
+
+
+
+.card p{
+
+    font-size:20px;
+
+}
+
+
+
+.card strong{
 
     display:block;
-    font-size:35px;
-    color:#ff9800;
-    margin:20px;
+    color:#ff5a00;
+    font-size:30px;
+    margin:20px 0;
 
 }
 
 
 
-.product-card button{
-
-    background:#0047ab;
-    color:white;
-    border:none;
-    padding:18px 45px;
-    border-radius:35px;
-    font-size:23px;
-
-}
-
-
-
-footer{
-
-    background:#0047ab;
-    color:white;
-    padding:30px;
-    margin-top:50px;
-
-}
-.form-box{
-
-    width:90%;
-    max-width:700px;
-    margin:50px auto;
-    background:white;
-    padding:45px;
-    border-radius:40px;
-    box-shadow:0 15px 35px #0002;
-
-}
-
-
-.form-box input,
-.form-box select,
-.form-box textarea{
+.card button{
 
     width:100%;
-    padding:20px;
-    margin:15px 0;
-    border-radius:25px;
-    border:1px solid #ddd;
+    padding:18px;
+    background:#ff5a00;
+    color:white;
+    border:none;
+    border-radius:30px;
     font-size:22px;
-    text-align:center;
-
-}
-
-
-.form-box textarea{
-
-    height:160px;
-    resize:none;
 
 }
 
 
 
-.form-box button{
+/* TELEFON */
 
-    width:100%;
-    padding:22px;
-    margin-top:20px;
-    border:none;
-    border-radius:35px;
-    background:#0047ab;
-    color:white;
-    font-size:25px;
-    cursor:pointer;
+@media(max-width:700px){
 
+.top h1{
+    font-size:40px;
 }
 
 
-.form-box button:hover{
+.banner h2{
+    font-size:35px;
+}
 
-    background:#ff9800;
+
+.search input{
+    width:75%;
+}
+
 
 }
