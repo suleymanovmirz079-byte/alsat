@@ -9,10 +9,11 @@
 
 <header>
     <div class="logo">🛒 AlSat</div>
-    <div class="subtitle">Azərbaycanın Alış-Satış Platforması</div>
+    <p>Azərbaycanın müasir alış-satış platforması</p>
 
-    <div class="search-box">
-        <input type="text" placeholder="🔍 Məhsul axtar...">
+    <div class="search">
+        <input type="text" placeholder="Məhsul axtar...">
+        <button>Axtar</button>
     </div>
 </header>
 
@@ -21,44 +22,64 @@
 
 <h2>Kateqoriyalar</h2>
 
-<button onclick="filterProducts('Beauty')">💄 Beauty</
+<div class="category-box">
+    <button>📱 Telefon</button>
+    <button>💄 Beauty</button>
+    <button>💻 Kompüter</button>
+    <button>👕 Geyim</button>
+    <button>🏠 Ev</button>
+    <button>🚗 Avto</button>
+</div>
 
 </section>
 
 
-<h2>🔥 Yeni məhsullar</h2>
+<section>
 
-<section class="products">
+<h2 class="title">🔥 Yeni məhsullar</h2>
+
+<div class="products">
 
 
-<div class="card" data-category="Telefon">
-<h3>iPhone 13</h3>
-<p>📱 Telefon</p>
-<p>💰 1200 AZN</p>
-<button>Sifariş et</button>
+<div class="card">
+    <div class="image">📱</div>
+    <h3>iPhone 13</h3>
+    <p>Telefon</p>
+    <strong>1200 AZN</strong>
+    <button>Sifariş et</button>
 </div>
 
 
-<div class="card" data-category="Beauty">
-<h3>Dodaq boyası</h3>
-<p>💄 Beauty</p>
-<p>💰 50 AZN</p>
-<button>Sifariş et</button>
+<div class="card">
+    <div class="image">💄</div>
+    <h3>Dodaq boyası</h3>
+    <p>Beauty</p>
+    <strong>50 AZN</strong>
+    <button>Sifariş et</button>
 </div>
 
 
-<div class="card" data-category="Kompüter">
-<h3>Lenovo Laptop</h3>
-<p>💻 Kompüter</p>
-<p>💰 900 AZN</p>
-<button>Sifariş et</button>
+<div class="card">
+    <div class="image">💻</div>
+    <h3>Lenovo Laptop</h3>
+    <p>Kompüter</p>
+    <strong>900 AZN</strong>
+    <button>Sifariş et</button>
 </div>
 
+
+</div>
 
 </section>
+
+
+<footer>
+<p>© 2026 AlSat</p>
+</footer>
 
 
 <script src="script.js"></script>
+
 </body>
 </html>
 
