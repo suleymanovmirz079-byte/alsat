@@ -1,22 +1,41 @@
-const searchInput = document.querySelector(".search input");
-const cards = document.querySelectorAll(".card");
+function addProduct(){
+
+    let name = document.getElementById("productName").value;
+    let price = document.getElementById("productPrice").value;
+    let city = document.getElementById("productCity").value;
+    let info = document.getElementById("productInfo").value;
+    let phone = document.getElementById("productPhone").value;
 
 
-searchInput.addEventListener("keyup", function(){
+    if(name === "" || price === "" || phone === ""){
+        alert("Məhsul adı, qiymət və telefon vacibdir!");
+        return;
+    }
 
-    let text = searchInput.value.toLowerCase();
 
-    cards.forEach(function(card){
+    let product = {
 
-        let name = card.innerText.toLowerCase();
+        name:name,
+        price:price,
+        city:city,
+        info:info,
+        phone:phone
 
-        if(name.includes(text)){
-            card.style.display = "block";
-        }
-        else{
-            card.style.display = "none";
-        }
+    };
 
-    });
 
-});
+    let products = JSON.parse(localStorage.getItem("products")) || [];
+
+
+    products.push(product);
+
+
+    localStorage.setItem("products", JSON.stringify(products));
+
+
+    alert("Elan uğurla əlavə edildi!");
+
+
+    window.location.href="index.html";
+
+}
